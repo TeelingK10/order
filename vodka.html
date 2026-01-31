@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>GIN MENU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>GIN</h1>
+  <p class="subtitle">Gin Cocktails</p>
+</header>
+
+<div class="seat-select">
+  <button onclick="changeSeat('A')">A席</button>
+  <button onclick="changeSeat('B')">B席</button>
+  <button onclick="changeSeat('C')">C席</button>
+</div>
+
+<section class="category">
+  <div class="item">
+    <span class="name">ブラックルシアン</span>
+    <span>
+      ¥1,500
+      <button class="add-btn" onclick="addItem('ブラックルシアン',1500)">追加</button>
+    </span>
+  </div>
+
+  <div class="item">
+    <span class="name">マンハッタン</span>
+    <span>
+      ¥1,500
+      <button class="add-btn" onclick="addItem('マンハッタン',1500)">追加</button>
+    </span>
+  </div>
+</section>
+
+<nav class="menu-buttons">
+  <a href="index.html" class="menu-btn">戻る</a>
+</nav>
+
+<div class="total-bar">
+  <span id="seat-name">席：A</span>
+  <span id="total-price">合計金額：¥0</span>
+  <button class="reset-btn" onclick="resetTotal()">リセット</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
