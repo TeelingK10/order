@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>BAR BAR名</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>BAR BAR名</h1>
+  <p class="subtitle">Cocktails & Spirits</p>
+</header>
+
+<div class="seat-select">
+  <button onclick="changeSeat('A')">A席</button>
+  <button onclick="changeSeat('B')">B席</button>
+  <button onclick="changeSeat('C')">C席</button>
+</div>
+
+<nav class="menu-buttons">
+  <a href="gin.html" class="menu-btn">GIN</a>
+  <a href="vodka.html" class="menu-btn">VODKA</a>
+</nav>
+
+<footer>
+  <p>※価格は税込です</p>
+</footer>
+
+</body>
+<div class="total-bar">
+  <span id="seat-name">席：A</span>
+  <span id="total-price">合計金額：¥0</span>
+  <button class="reset-btn" onclick="resetTotal()">リセット</button>
+</div>
+
+<script src="script.js"></script>
+
+</html>
