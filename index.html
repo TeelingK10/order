@@ -21,21 +21,35 @@
 </div>
 
 <nav class="menu-buttons">
-  <a href="gin.html" class="menu-btn">GIN</a>
   <a href="vodka.html" class="menu-btn">VODKA</a>
+  <a href="gin.html" class="menu-btn">GIN</a>
 </nav>
 
-<footer>
-  <p>※価格は税込です</p>
-</footer>
+<nav class="menu-buttons">
+  <a href="total.html" class="menu-btn">売上</a>
+</nav>
 
-</body>
+<div class="manual-area">
+  <h2>手動追加・チャージ</h2>
+  <div class="manual-input">
+    <input type="text" id="item-name" placeholder="内容（未入力ならオリジナル）">
+    <input type="number" id="item-price" placeholder="金額">
+    <button onclick="addManualItem()">追加</button>
+    <button onclick="addCharge()">チャージ ¥500</button>
+  </div>
+</div>
+
+<div class="order-area">
+  <h2>注文一覧</h2>
+  <ul id="order-list"></ul>
+</div>
+
 <div class="total-bar">
-  <span id="seat-name">席：A</span>
-  <span id="total-price">合計金額：¥0</span>
-  <button class="reset-btn" onclick="resetTotal()">リセット</button>
+  <span id="seat-name"></span>
+  <span id="total-price"></span>
+  <button class="reset-btn" onclick="resetTotal()">会計リセット</button>
 </div>
 
 <script src="script.js"></script>
-
+</body>
 </html>
